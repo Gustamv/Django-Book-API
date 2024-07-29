@@ -45,6 +45,18 @@ Run the server:
 ```
 python manage.py runserver
 ```
+Models
+
+Book:
+id: Unique identifier for the book (UUIDField)
+title: Book title (CharField)
+author: Book author (CharField)
+isbn: ISBN number (CharField)
+published_date: Publication date (DateField)
+description: Book description (TextField, optional)
+created_at: Date the book was created (DateTimeField, auto_now_add=True)
+updated_at: Date the book was last updated (DateTimeField, auto_now=True)
+
 API Usage:
 
 The API can be accessed through RESTful endpoints. The complete API documentation is available at https://www.merriam-webster.com/dictionary/removed.
